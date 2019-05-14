@@ -77,7 +77,7 @@ This is why a script that automatically unlocks the wallet is  helpful. The pass
   # PIDFile=/home/bitcoin/.lnd/lnd.pid
   
   # add this line directly below ExecStart:
-  ExecStartPost=+/etc/lnd/unlock
+  ExecStartPost=/etc/lnd/unlock
   
   # make sure that the overall timeout is longer than the script wait time, eg. 240s
   TimeoutSec=240
